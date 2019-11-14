@@ -31,10 +31,10 @@
     outline: none;
 }
 #drawLine.btn {
-    background: center center / auto 98% no-repeat url("../img/shape_write.png");
+    background: center center / auto 98% no-repeat url("../img/draw_line_normal.png");
 }
 #drawLine.btn.active {
-    background: center center / auto 98% no-repeat url("../img/shape_write_on.png");
+    background: center center / auto 98% no-repeat url("../img/draw_line_on.png");
 }
 #restart.btn {
     background: center center / auto 98% no-repeat url("../img/redo.png");

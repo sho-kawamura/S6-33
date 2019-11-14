@@ -152,7 +152,7 @@ $(function() {
                 ctx.lineTo(s['matrix'][i][0], s['matrix'][i][1]);
             }
             ctx.lineWidth = 3;
-            ctx.fillStyle = 'rgb(254, 212, 212)';
+            ctx.fillStyle = 'rgba(100, 140, 255, 0.45)';
             ctx.fill();
             ctx.lineWidth = sps.shapeLineWidth;
             ctx.strokeStyle = "rgb(0, 0, 0)";
