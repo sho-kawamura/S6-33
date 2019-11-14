@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>S6-33</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/jquery-3.2.1.min.js" defer></script>
+        <script src="js/jquery-ui.min.js" defer></script>
+        <script src="js/ffl-scaleadjuster-1.0.1.min.js" defer></script>
+        <script src="js/fflcom_userApp_init.js" defer></script>
+        <script src="js/main.js" defer></script>
+        <script src="libs/ShapeService.js" defer></script>
+        <script src="js/index.js" defer></script>
+    </head>
+    <body id="body">
+    <!-- edit start -->
+    <div id="stage_0">
+        <img src="img/S6-33_Q.png" alt="下の図は、横浜市の縮図です。この図を使って、横浜市のおよその面積の求め方を考えましょう。" class="question">
+        <img src="img/map.png" alt="map" class="map">
+        <button type="button" id="drawLine" class="btn"><!-- 線を引く --></button>
+        <button type="button" id="restart" class="btn"><!-- やり直し --></button>
+        <div id="stage_1">
+            <div id="Canvas">
+                <canvas id="appCanvas" width="1280" height="960"></canvas>
+                <canvas id="Mycanvas"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- edit end -->
+    </body>
+</html>
