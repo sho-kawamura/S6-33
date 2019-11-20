@@ -2,9 +2,9 @@ const ShapeService = function() {
     // グリット設定情報
     this.gridLineColor = 'rgba(65, 177, 234, 1)'; // グリッド線の色
     this.gridLineWidth = 0.5;   // グリッド線の太さ
-    this.gridTopRate = 0.20605;    // canvas高さ何割分をグリッド上の高さにするか
-    this.gridLeftRate = 0.3035;   // canvas高さ何割分をグリッド横の幅にするか
-    this.cellSizeRate = 0.02175;   // canvas高さ何割分をセル1個分の大きさにするか
+    this.gridTopRate = 0.02;    // canvas高さ何割分をグリッド上の高さにするか
+    this.gridLeftRate = 0.215;   // canvas高さ何割分をグリッド横の幅にするか
+    this.cellSizeRate = 0.03;   // canvas高さ何割分をセル1個分の大きさにするか
     this.cellsWidth = 24;       // セルの個数（横）
     this.cellsHeight = 32;      // セルの個数（縦）
 
@@ -143,8 +143,8 @@ const ShapeService = function() {
      * @return {null|number[]}  指定地点から一番近いグリッド点の座標（範囲外選択の場合、nullを返す）
      */
     ShapeService.prototype.getNearestGridPoint = function(targetPoint, gridInfo) {
-        if (gridInfo['xArea']['min'] > targetPoint[0] || targetPoint[0] > gridInfo['xArea']['max']
-            || gridInfo['yArea']['min'] > targetPoint[1] || targetPoint[1] > gridInfo['yArea']['max']) {
+        if (gridInfo['xArea']['min'] -50 > targetPoint[0] || targetPoint[0] > gridInfo['xArea']['max'] +50
+            || gridInfo['yArea']['min'] -50 > targetPoint[1] || targetPoint[1] > gridInfo['yArea']['max'] +50) {
             // グリッド範囲外の場合はnull
             return null;
         } else {
